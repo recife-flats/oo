@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recife Flats Temporada | Aluguel de Apartamentos em Recife</title>
+  <meta name="description" content="Apartamentos premium para temporada em Recife. Conforto, localização e experiências únicas no coração do Recife.">
+
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/hero.css">
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════════════════════
+       #menu-page — CATÁLOGO FULL-SCREEN (atrás do site-content)
+  ════════════════════════════════════════════════════════════ -->
+  <div id="menu-page" role="dialog" aria-modal="true" aria-label="Menu de navegação" aria-hidden="true">
+
+    <!-- Coluna esquerda: navegação -->
+    <div class="menu-col-left">
+      <div class="menu-header">
+        <div>
+          <span class="menu-logo-name">Recife Flats</span>
+          <span class="menu-logo-sub">Temporada</span>
+        </div>
+        <button class="menu-close-btn" id="menu-close-btn" aria-label="Fechar menu">
+          Fechar
+          <span class="close-circle">✕</span>
+        </button>
+      </div>
+
+      <nav class="menu-nav" aria-label="Menu principal">
+        <div class="menu-nav-item">
+          <span class="menu-nav-num">01</span>
+          <div class="menu-nav-link-wrap">
+            <a href="#hero" class="menu-nav-link" data-menu-link>Início</a>
+          </div>
+          <span class="menu-nav-arrow" aria-hidden="true">→</span>
+        </div>
+        <div class="menu-nav-item">
+          <span class="menu-nav-num">02</span>
+          <div class="menu-nav-link-wrap">
+            <a href="#apartamentos" class="menu-nav-link" data-menu-link>Apartamentos</a>
+          </div>
+          <span class="menu-nav-arrow" aria-hidden="true">→</span>
+        </div>
+        <div class="menu-nav-item">
+          <span class="menu-nav-num">03</span>
+          <div class="menu-nav-link-wrap">
+            <a href="#sobre" class="menu-nav-link" data-menu-link>Sobre nós</a>
+          </div>
+          <span class="menu-nav-arrow" aria-hidden="true">→</span>
+        </div>
+        <div class="menu-nav-item">
+          <span class="menu-nav-num">04</span>
+          <div class="menu-nav-link-wrap">
+            <a href="#depoimentos" class="menu-nav-link" data-menu-link>Depoimentos</a>
+          </div>
+          <span class="menu-nav-arrow" aria-hidden="true">→</span>
+        </div>
+        <div class="menu-nav-item">
+          <span class="menu-nav-num">05</span>
+          <div class="menu-nav-link-wrap">
+            <a href="#contato" class="menu-nav-link" data-menu-link>Contato</a>
+          </div>
+          <span class="menu-nav-arrow" aria-hidden="true">→</span>
+        </div>
+      </nav>
+
+      <div class="menu-footer">
+        <span class="menu-footer-copy">© 2025 Recife Flats</span>
+        <div class="menu-socials">
+          <a href="#" class="menu-social-link">Instagram</a>
+          <a href="#" class="menu-social-link">Airbnb</a>
+          <a href="#" class="menu-social-link">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coluna direita: imagem + contato -->
+    <div class="menu-col-right">
+      <div class="menu-right-bg" style="background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=900&q=80');" aria-hidden="true"></div>
+      <div class="menu-right-content">
+        <span class="menu-edition">Recife · Pernambuco · Brasil</span>
+        <p class="menu-right-tagline">
+          Sua temporada com<br><em>vista para o mar</em><br>começa aqui.
+        </p>
+        <div class="menu-contact-quick">
+          <div class="menu-contact-item">
+            <svg class="menu-contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            <a href="https://wa.me/558100000000" target="_blank">(81) 9 0000-0000</a>
+          </div>
+          <div class="menu-contact-item">
+            <svg class="menu-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <a href="mailto:contato@recifeflats.com.br">contato@recifeflats.com.br</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       #site-content — TODA A PÁGINA (vira no menu)
+  ════════════════════════════════════════════════════════════ -->
+  <div id="site-content">
+
+    <!-- Barra de Anúncio -->
+    <div class="announcement-bar" id="announcement-bar">
+      🌴 Promoção de Temporada — <span>até 20% off</span> nas reservas de 5+ noites
+      <button class="ann-close" id="ann-close" aria-label="Fechar anúncio">✕</button>
+    </div>
+
+    <!-- ══════ NAVBAR ══════ -->
+    <header id="navbar" class="over-hero">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo" aria-label="Recife Flats — Início">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <rect x="3" y="8" width="7" height="10" rx="1" fill="white" fill-opacity="0.9"/>
+              <rect x="11" y="5" width="7" height="13" rx="1" fill="white" fill-opacity="0.7"/>
+              <rect x="5" y="11" width="1.5" height="2" rx="0.3" fill="#6E2410"/>
+              <rect x="8" y="11" width="1.5" height="2" rx="0.3" fill="#6E2410"/>
+              <rect x="13" y="8" width="1.5" height="2" rx="0.3" fill="#6E2410"/>
+              <rect x="16" y="8" width="1.5" height="2" rx="0.3" fill="#6E2410"/>
+              <rect x="13" y="11" width="1.5" height="2" rx="0.3" fill="#6E2410"/>
+              <rect x="16" y="11" width="1.5" height="2" rx="0.3" fill="#6E2410"/>
+            </svg>
+          </div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">Recife Flats</span>
+            <span class="nav-logo-sub">Temporada</span>
+          </div>
+        </a>
+
+        <div class="nav-actions">
+          <a href="https://wa.me/558100000000" class="btn-whatsapp" target="_blank" rel="noopener" aria-label="Contato WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            <span class="btn-wlabel">WhatsApp</span>
+          </a>
+
+          <button class="menu-toggle" id="menu-toggle"
+                  aria-label="Abrir menu de navegação"
+                  aria-expanded="false"
+                  aria-controls="menu-page">
+            <span class="menu-toggle-label">Menu</span>
+            <div class="toggle-icon" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ══════ HERO ══════ -->
+    <section id="hero" aria-label="Apresentação">
+      <div class="hero-left">
+        <div class="hero-bg-image" id="hero-bg"
+             style="background-image: url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1400&q=80');"
+             aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="badge sand hero-badge">
+            <div class="badge-dot"></div>
+            <span>Recife · Boa Viagem · Pina</span>
+          </div>
+
+          <h1 class="hero-title">
+            Viva o melhor de <em>Recife</em> com conforto real
+          </h1>
+
+          <p class="hero-description">
+            Apartamentos totalmente equipados para temporada, a passos da praia.
+            Ideal para famílias, casais e viajantes exigentes.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#apartamentos" class="btn-primary">
+              Ver Apartamentos
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contato" class="btn-secondary">
+              Consultar disponibilidade
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-num">4</span>
+              <span class="hero-stat-label">Apartamentos</span>
+            </div>
+            <div class="hero-stat-div"></div>
+            <div class="hero-stat">
+              <span class="hero-stat-num">200+</span>
+              <span class="hero-stat-label">Hóspedes Felizes</span>
+            </div>
+            <div class="hero-stat-div"></div>
+            <div class="hero-stat">
+              <span class="hero-stat-num">4.9</span>
+              <span class="hero-stat-label">Nota Média</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-images-col">
+          <div class="hero-img-card large">
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=700&q=80" alt="Flat Boa Viagem Premium" loading="eager">
+            <span class="hero-img-status ok">Disponível</span>
+            <div class="hero-img-label">
+              <span class="hero-img-label-name">Flat Boa Viagem Premium</span>
+              <span class="hero-img-label-loc">Boa Viagem, Recife</span>
+            </div>
+          </div>
+
+          <div class="hero-img-card small">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=700&q=80" alt="Studio Pina Vista Mar" loading="eager">
+            <span class="hero-img-status">Reservado</span>
+            <div class="hero-img-label">
+              <span class="hero-img-label-name">Studio Pina Vista Mar</span>
+              <span class="hero-img-label-loc">Pina, Recife</span>
+            </div>
+          </div>
+
+          <div class="hero-float-card" aria-label="Avaliação média dos hóspedes">
+            <div class="float-card-stars" aria-label="5 estrelas">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div class="float-card-num">4.9</div>
+            <div class="float-card-lbl">Hóspedes satisfeitos</div>
+            <div class="float-card-rev">+200 avaliações</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-ind-text">Scroll</span>
+        <div class="scroll-ind-line"></div>
+      </div>
+    </section>
+
+    <!-- ══════ SEÇÕES (a construir nas próximas etapas) ══════ -->
+    <section id="apartamentos" class="section cream" style="min-height:300px; display:flex; align-items:center; justify-content:center; border-top:1px solid rgba(110,36,16,0.06);">
+      <div class="container" style="text-align:center;">
+        <div class="section-label" style="justify-content:center;">
+          <div class="section-label-dot"></div>
+          <span class="section-label-text">Próxima etapa</span>
+        </div>
+        <h2 style="color:var(--clay); margin-bottom:16px;">Apartamentos</h2>
+        <p>Cards dos 4 apartamentos com galeria, preços e disponibilidade</p>
+      </div>
+    </section>
+
+    <section id="sobre" class="section cream-dark" style="min-height:200px; display:flex; align-items:center; justify-content:center;">
+      <div class="container" style="text-align:center;">
+        <div class="section-label" style="justify-content:center;">
+          <div class="section-label-dot"></div>
+          <span class="section-label-text">Próxima etapa</span>
+        </div>
+        <h2 style="color:var(--clay); margin-bottom:16px;">Sobre Nós</h2>
+        <p>História, diferenciais e a equipe Recife Flats</p>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="section cream" style="min-height:200px; display:flex; align-items:center; justify-content:center; border-top:1px solid rgba(110,36,16,0.06);">
+      <div class="container" style="text-align:center;">
+        <div class="section-label" style="justify-content:center;">
+          <div class="section-label-dot"></div>
+          <span class="section-label-text">Próxima etapa</span>
+        </div>
+        <h2 style="color:var(--clay); margin-bottom:16px;">Depoimentos</h2>
+        <p>Slider com avaliações reais dos hóspedes</p>
+      </div>
+    </section>
+
+    <section id="contato" class="section dark" style="min-height:200px; display:flex; align-items:center; justify-content:center;">
+      <div class="container" style="text-align:center;">
+        <div class="section-label" style="justify-content:center;">
+          <div class="section-label-dot"></div>
+          <span class="section-label-text">Próxima etapa</span>
+        </div>
+        <h2 style="color:var(--white); margin-bottom:16px;">Contato & Footer</h2>
+        <p style="color:var(--text-faint);">Formulário de contato, mapa e footer completo</p>
+      </div>
+    </section>
+
+  </div><!-- /#site-content -->
+
+
+  <!-- ══════ SCRIPTS ══════ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/animations.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initMenu();
+      initAnimations();
+    });
+  </script>
+</body>
+</html>
