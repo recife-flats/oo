@@ -1,0 +1,129 @@
+/* ============================================================
+   RECIFE FLATS TEMPORADA — DESIGN TOKENS
+   
+   Paleta: terracota (clay) + areia (sand) + oceano (ocean)
+   Fontes: Cormorant Garamond (display) + DM Sans (corpo)
+   
+   Baseado no design system Optik com adaptações para
+   o segmento de hospedagem premium em Recife.
+============================================================ */
+
+:root {
+  /* ── Cores Primárias ── */
+  --clay:          #6E2410;
+  --clay-light:    #9B3D24;
+  --clay-dark:     #4A1809;
+
+  /* ── Cores Secundárias ── */
+  --sand:          #C49B6A;
+  --sand-light:    #DEC09A;
+  --sand-dark:     #A07B4A;
+
+  /* ── Cor de Destaque ── */
+  --ocean:         #1A3F52;
+  --ocean-light:   #2A5F78;
+
+  /* ── Neutros ── */
+  --cream:         #F6EFE4;
+  --cream-dark:    #EDE4D5;
+  --cream-deeper:  #E2D6C3;
+  --white:         #FFFFFF;
+  --text:          #0D0D0D;
+  --text-muted:    #6B6560;
+  --text-light:    rgba(255, 255, 255, 0.82);
+  --text-faint:    rgba(255, 255, 255, 0.42);
+
+  /* ── Opacidades para overlays ── */
+  --overlay-dark:     rgba(13, 13, 13, 0.72);
+  --overlay-clay:     rgba(110, 36, 16, 0.68);
+  --overlay-ocean:    rgba(26, 63, 82, 0.40);
+  --glass-light:      rgba(246, 239, 228, 0.93);
+  --glass-dark:       rgba(0, 0, 0, 0.28);
+
+  /* ── Borders ── */
+  --border-light:     rgba(110, 36, 16, 0.07);
+  --border-sand:      rgba(196, 155, 106, 0.42);
+  --border-sand-soft: rgba(196, 155, 106, 0.12);
+  --border-white:     rgba(255, 255, 255, 0.1);
+  --border-white-med: rgba(255, 255, 255, 0.18);
+  --border-white-hi:  rgba(255, 255, 255, 0.33);
+
+  /* ── Tipografia — Famílias ── */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'DM Sans', -apple-system, sans-serif;
+
+  /* ── Tipografia — Escala ── */
+  --text-h1:       clamp(42px, 5.5vw, 80px);
+  --text-h2:       clamp(36px, 4.5vw, 64px);
+  --text-h3:       clamp(28px, 3vw, 42px);
+  --text-h4:       clamp(22px, 2.2vw, 28px);
+  --text-h5:       20px;
+  --text-h6:       17px;
+  --text-body:     clamp(15px, 1.1vw, 17px);
+  --text-body-sm:  14px;
+  --text-caption:  12px;
+  --text-micro:    11px;
+  --text-label:    10px;
+
+  /* ── Tipografia — Pesos ── */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+
+  /* ── Line heights ── */
+  --leading-tight:   1.1;
+  --leading-snug:    1.25;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.75;
+
+  /* ── Letter spacing ── */
+  --tracking-tight:  -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.03em;
+  --tracking-wider:  0.06em;
+  --tracking-widest: 0.12em;
+
+  /* ── Espaçamento ── */
+  --space-xs:   4px;
+  --space-sm:   8px;
+  --space-md:   16px;
+  --space-lg:   24px;
+  --space-xl:   40px;
+  --space-2xl:  60px;
+  --space-3xl:  80px;
+  --space-4xl:  120px;
+
+  /* ── Layout ── */
+  --nav-height:       84px;
+  --container-max:    1300px;
+  --container-narrow: 900px;
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-xl:   20px;
+  --radius-pill: 100px;
+
+  /* ── Sombras ── */
+  --shadow-sm:    0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md:    0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg:    0 12px 40px rgba(0, 0, 0, 0.12);
+  --shadow-xl:    0 24px 64px rgba(0, 0, 0, 0.16);
+  --shadow-glow:  0 8px 24px rgba(110, 36, 16, 0.35);
+
+  /* ── Transições ── */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-flip:   cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast:   0.2s;
+  --duration-normal: 0.35s;
+  --duration-slow:   0.6s;
+  --duration-page:   0.88s;
+
+  /* ── Z-index scale ── */
+  --z-base:    1;
+  --z-nav:     100;
+  --z-menu:    200;
+  --z-overlay: 300;
+  --z-toast:   400;
+}
